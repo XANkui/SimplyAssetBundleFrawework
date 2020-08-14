@@ -3,6 +3,7 @@ using System.IO;
 
 /// <summary>
 /// 修改新建脚本中的指定信息
+/// 功能：增加脚本头部注释
 /// </summary>
 public class AddScriptInfo : UnityEditor.AssetModificationProcessor
 {

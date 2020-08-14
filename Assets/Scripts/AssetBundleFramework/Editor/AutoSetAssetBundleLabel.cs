@@ -38,7 +38,7 @@ namespace ABFw
 
 
             // 定义需要打包资源的文件夹根目录
-            strNeedSetLabelRoot = Application.dataPath + "/" + "AB_Res";
+            strNeedSetLabelRoot = PathTools.GetABResourcesPath();
             //Debug.Log("strNeedSetLabelRoot = "+strNeedSetLabelRoot);
 
             DirectoryInfo dirTempInfo = new DirectoryInfo(strNeedSetLabelRoot);

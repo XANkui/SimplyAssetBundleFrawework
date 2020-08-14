@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 841730454
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 47d668918194b9cd49ff7ec5e9c79813
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 21c99c86a43ad817b2cb7f65458ae090
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB_Resources/Scene_1/Matreials/Material.mat
+Dependencies:
+- D:/ProgramFile/UnityProjects/AssetBundleFramework/Assets/StreamingAssets/Windows/scene_1/testures.ab
