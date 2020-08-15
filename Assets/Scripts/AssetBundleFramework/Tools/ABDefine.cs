@@ -21,6 +21,7 @@ namespace ABFw
 
     public class ABDefine
     {
-
+        /* 框架常量 */
+        public const string ASSETBUNDLE_MANIFEST = "AssetBundleManifest";
     }
 }

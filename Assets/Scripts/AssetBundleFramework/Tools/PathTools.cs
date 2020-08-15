@@ -73,7 +73,7 @@ namespace ABFw
         /// 获得平台名称
         /// </summary>
         /// <returns></returns>
-        private static string GetPlatformName()
+        public static string GetPlatformName()
         {
             string strReturenPlatformName = string.Empty;
 
@@ -116,7 +116,11 @@ namespace ABFw
                     strReturnWWWPath = "file://"+GetABOutPath();
 
                     break;
-               
+                case RuntimePlatform.IPhonePlayer:
+                    strReturnWWWPath = GetABOutPath()+"/Raw/";
+
+                    break;
+
                 case RuntimePlatform.Android:
                     strReturnWWWPath = "jar:file://"+GetABOutPath();
 
