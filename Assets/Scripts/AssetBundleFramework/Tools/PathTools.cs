@@ -101,6 +101,33 @@ namespace ABFw
             return strReturenPlatformName;
         }
 
+        /// <summary>
+        /// 返回 WWW 下载 AB 包加载路径
+        /// </summary>
+        /// <returns></returns>
+        public static string GetWWWAssetBundlePath() {
+            string strReturnWWWPath = string.Empty;
+
+            switch (Application.platform)
+            {
+
+                case RuntimePlatform.WindowsPlayer:
+                case RuntimePlatform.WindowsEditor:
+                    strReturnWWWPath = "file://"+GetABOutPath();
+
+                    break;
+               
+                case RuntimePlatform.Android:
+                    strReturnWWWPath = "jar:file://"+GetABOutPath();
+
+                    break;
+
+                default:
+                    break;
+            }
+
+            return strReturnWWWPath;
+        }
 
     }//Class_End
 }
